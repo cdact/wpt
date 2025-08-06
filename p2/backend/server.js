@@ -9,8 +9,8 @@ app.use(cors());
 const db = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: 'Parth@001',
-  database: 'employee_db'
+  password: '',
+  database: ''
 });
 
 app.get('/api/employees', (req, res) => {
@@ -70,4 +70,5 @@ app.get('/api/departments', (req, res) => {
 
 app.listen(5000, () => {
   console.log("Server running on port 5000");
+
 });
